@@ -1,0 +1,243 @@
+/* Responsive Screen */
+* {
+  box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="body"] {
+  width: 100%;
+}
+/*Color de fondo ---> #2e2e2a
+  Color de hover ---> #f9a91a*/
+  body {
+    font-family: sans-serif;
+  }
+
+  nav {
+    /*outline: 1px solid yellow;*/
+  }
+
+  ul {
+    /*outline: 1px solid blue;*/
+    list-style: none;
+    display: inline-block
+    padding: 0;
+    margin: 0;
+    background: #6F0C97;
+    line-height: 25px;
+    overflow: auto;
+    text-align: center;
+  }
+
+  li {
+    /*outline: 1px solid red;*/
+    width: 220px;
+    /*display: inline-block;*/
+    text-align: auto;
+    float: left;
+  }
+
+  a {
+    /*outline: 1px solid green;*/
+    text-decoration: none;
+    display: block;
+    color: #fff;
+
+  }
+
+  a:hover {
+    background: #FFFFFF;
+    color: #000;
+  }
+
+
+/*Botones circulares del menú*/
+
+.theTransition {
+    transition: all 750ms ease-in-out;
+}
+
+#circelMenu {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+#circelMenu .sticky {
+    transform: rotate(45deg);
+}
+
+#circelMenu:hover .sticky {
+    transform: rotate(10deg);
+}
+
+/* Responsive Screen */
+* {
+  box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="body"] {
+  width: 100%;
+}
+#circelMenu .sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+}
+
+#circelMenu .reveal .circle {
+    box-shadow: 0 1px 0px rgba(0, 0, 0, .15);
+    font-family: 'helvetica neue', arial;
+    font-weight: 200;
+    line-height: 140px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#circelMenu .reveal .circle {
+    background: #fafafa;
+}
+
+#circelMenu .circle_wrapper {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+}
+
+#circelMenu .circle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+    border-radius: 999px;
+}
+
+#circelMenu .back {
+    height: 10px;
+    top: 30px;
+}
+
+#circelMenu:hover .back {
+    height: 90px;
+    top: 110px;
+}
+
+#circelMenu .back .circle {
+    margin-top: -130px;
+    background-color: #6F0C97;
+    background-image: -webkit-linear-gradient(bottom, rgba(251, 236, 63, .0), rgba(255, 255, 255, .8));
+}
+
+#circelMenu:hover .back .circle {
+    margin-top: -50px;
+}
+
+#circelMenu .front {
+    height: 150px;
+    bottom: 0;
+    top: auto;
+    -webkit-box-shadow: 0 -140px 20px -140px rgba(0, 0, 0, .3);
+}
+
+#circelMenu:hover .front {
+    height: 70px;
+    -webkit-box-shadow: 0 -60px 10px -60px rgba(0, 0, 0, .1);
+}
+
+#circelMenu .front .circle {
+    margin-top: -10px;
+    background: #A552CD;
+    background-image: -webkit-linear-gradient(bottom, rgba(251, 236, 63, .0) 75%, #8534AE 95%);
+    background-image: -moz-linear-gradient(bottom, rgba(251, 236, 63, .0) 75%, #8534AE 95%);
+    background-image: linear-gradient(bottom, rgba(251, 236, 63, .0) 75%, #8534AE 95%);
+}
+
+#circelMenu h4 {
+    font-family: 'helvetica neue', arial;
+    font-weight: 150;
+    font-size: 12; 
+    text-align: center;
+    position: absolute;
+    width: 180px;
+    height: 140px;
+    line-height: 140px;
+    transition: opacity 50ms linear 400ms;
+}
+
+#circelMenu:hover h4 {
+    opacity: 0;
+    transition: opacity 50ms linear 300ms;
+}
+
+#circelMenu:hover .front .circle {
+    margin-top: -90px;
+    background-color: #6F0C97;
+    background-position: 0 100px;
+}
+
+
+/*Botones de estadísticas*/
+
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 0 0 0 2px #f45e61;
+  color: #f45e61;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+button::before, button::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.statisticsButton {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.statisticsButton::before, .statisticsButton::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.statisticsButton::before {
+  top: 0;
+  left: 0;
+}
+.statisticsButton::after {
+  bottom: 0;
+  right: 0;
+}
+.statisticsButton:hover {
+  color: #60daaa;
+}
+.statisticsButton:hover::before, .statisticsButton:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.statisticsButton:hover::before {
+  border-top-color: #44125D;
+  border-right-color: #44125D;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.statisticsButton:hover::after {
+  border-bottom-color: #44125D;
+  border-left-color: #44125D;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}

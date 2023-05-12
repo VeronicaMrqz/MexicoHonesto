@@ -1,0 +1,42 @@
+/*Color de fondo ---> #2e2e2a
+  Color de hover ---> #f9a91a*/
+  body {
+    font-family: sans-serif;
+  }
+
+  nav {
+    /*outline: 1px solid yellow;*/
+  }
+
+  ul {
+    /*outline: 1px solid blue;*/
+    list-style: none;
+    display: inline-block
+    padding: 0;
+    margin: 0;
+    background: #6F0C97;
+    line-height: 25px;
+    overflow: auto;
+    text-align: center;
+  }
+
+  li {
+    /*outline: 1px solid red;*/
+    width: 220px;
+    /*display: inline-block;*/
+    text-align: auto;
+    float: left;
+  }
+
+  a {
+    /*outline: 1px solid green;*/
+    text-decoration: none;
+    display: block;
+    color: #fff;
+
+  }
+
+  a:hover {
+    background: #FFFFFF;
+    color: #000;
+  }

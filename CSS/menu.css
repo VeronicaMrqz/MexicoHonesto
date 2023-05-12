@@ -1,0 +1,49 @@
+/* Responsive Screen */
+* {
+  box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="body"] {
+  width: 100%;
+}
+body {
+    font-family: sans-serif;
+
+  }
+
+  nav {
+    /*outline: 1px solid yellow;*/
+  }
+
+  ul {
+    /*outline: 1px solid blue;*/
+    list-style: none;
+    display: inline-block
+    padding: 0;
+    margin: 0;
+    background: #6F0C97;
+    line-height: 50px;
+    overflow: auto;
+    text-align: center;
+  }
+
+  li {
+    /*outline: 1px solid red;*/
+    width: 1000px;
+    /*display: inline-block;*/
+    text-align: center;
+    float: left;
+  }
+
+  a {
+    /*outline: 1px solid green;*/
+    text-decoration: none;
+    display: block;
+    color: #fff;
+
+  }
+
+  a:hover {
+    background: #FFFFFF;
+    color: #000;
+  }

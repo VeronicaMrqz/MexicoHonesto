@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="row">
+	    <div class="col-md-12">
+	      <form action="data.php" method="post">
+		        <h1> México honesto </h1>
+		        <br>
+		        <h3 align="justify">Si acudiste a un ministerio público y fuiste víctima o te propusieron un acto de corrupción al momento de presentar tu denuncia ¡Es momento de evidenciar y ayudar a combatir la corrupción!</h3>
+		        <h5 align="center">Llena este formulario teniendo a la mano el código QR debajo del teléfono rojo en el Ministerio Público al que acudiste</h5>
+		        <br>
+
+		        <fieldset>
+		          <legend><span class="number">1</span> Clave arrojada por el código QR</legend>
+		          <label for="clave">Clave:</label>
+		          <input type="password" id="clave" name="clave">
+		        </fieldset>
+
+		        <fieldset>  
+		          	<legend><span class="number">2</span>Hora de asistencia al ministerio público</legend>
+		          	<label for="hora">Hora:</label>
+		          	<input type="time" id="hora" name="hora" step="2">
+		        </fieldset>
+
+		        <fieldset>
+		        	<legend><span class="number">3</span>Ciudad</legend>
+		        	<label for="ciudad">Ciudad:</label>
+					<input type="text" id="ciudad" name="ciudad">
+		        </fieldset>
+
+		        <fieldset>
+		        	<legend><span class="number">4</span>Tiempo de espera para su atención</legend>
+		        	<label for="tiempo">Tiempo (horas):</label>
+		        	<input type="number" id="tiempo" name="tiempo">
+		        </fieldset>
+
+		         <fieldset>
+		        	<legend><span class="number">5</span>Tipo de denuncía que te disponías a realizar</legend>
+		        	<label for="denuncia">Denuncia:</label>
+		        	<select id="denuncia" name="denuncia">
+					      <option value="Robo sin violencia">Robo sin violencia</option>
+					      <option value="Abuso de confianza">Abuso de confianza</option>
+					      <option value="Fraude">Fraude</option>
+					      <option value="Administración fraudulenta">Administración fraudulenta</option>
+					      <option value="Despojo">Despojo</option>
+					      <option value="Daño a la propiedad">Daño a la propiedad</option>
+					      <option value="Peligro de contagio">Peligro de contagio</option>
+					      <option value="Privación de la libertad con fines sexuales">Privación de la libertad con fines sexuales</option>
+					      <option value="Acoso sexual">Acoso sexual</option>
+					      <option value="Discriminación">Discriminación</option>
+					      <option value="Amenazas">Amenazas</option>
+					      <option value="Allanamiento de morada">Allanamiento de morada</option>
+					      <option value="Ejercicio ilegal del propio derecho">Ejercicio ilegal del propio derecho</option>
+					      <option value="Robo de celular sin violencia">Robo de celular sin violencia</option>
+					      <option value="Otro">Otro</option>
+					</select>
+		        </fieldset>
+
+		         <fieldset>
+		        	<legend><span class="number">6</span>Acto de corrupción del que fue víctima</legend>
+		        	<label for="acto">Acto:</label>
+		        	<select id="acto" name="acto">
+					      <option value="Pidieron que ratificara mi denuncia">Pidieron que ratificara mi denuncia</option>
+					      <option value="Pidieron gratificación (mordidas) para iniciar la investigación">Pidieron gratificación ("mordidas") para iniciar la investigación</option>
+					      <option value="Pidieron gratificación (mordidas) para que pudiera contar con un abogado">Pidieron gratificación ("mordidas") para que pudiera contar con un abogado</option>
+					      <option value="Dejaron en libertad al acusado porque pagó dinero">Dejaron en libertad al acusado porque pagó dinero</option>
+					      <option value="Me dijeron que no se cuenta con los elementos suficientes para iniciar la investigación, sin haber tomado mi declaración apropiadamente.">Me dijeron que no se cuenta con los elementos suficientes para iniciar la investigación</option>
+					      <option value="Me piden dinero para continuar con el seguimiento de la investigación">Me piden dinero para continuar con el seguimiento de la investigación</option>
+					</select>
+		        </fieldset>
+
+		         <fieldset>
+		        	<legend><span class="number">7</span>Si le fue posible, nombre a la persona que le atendió</legend>
+		        	<label for="nombre">Nombre:</label>
+		        	<input type="text" id="nombre" name="nombre">
+		        </fieldset>
+
+		        <button type="submit">Enviar</button>
+	       </form>
+	    </div>
+    </div>
+</body>
+</html>
